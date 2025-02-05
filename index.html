@@ -16,7 +16,8 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            background-color: #cfe8ff;
+            background-color: #ffe2f9;
+            color: #333;
         }
 
         .content {
@@ -60,6 +61,17 @@
             }
         }
 
+        /* Dark mode styles */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #cfe8ff;
+                color: #333;
+            }
+
+            .social-media a i {
+                color: #333;
+            }
+        }
     </style>
 </head>
 <body>
