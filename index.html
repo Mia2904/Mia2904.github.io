@@ -30,24 +30,25 @@
         .content h1 {
             font-family: Century Gothic, Helvetica, Sans-Serif;
             font-weight: normal;
-            font-size: 40px;
+            font-size: 5vh;
         }
 
         .social-media {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
+            bottom: 1.5vh;
+            right: 1.8vh;
             display: flex;
-            gap: 15px;
+            gap: 1vh
         }
 
         .social-media a i {
             color: #333;
             transition: color 0.2s, transform 0.2s;
+            font-size: 3vh;
         }
 
         .social-media a:hover i {
-            color: #0073e6;
+            color: #ff8ac1;
             transform: scale(1.1);
         }
 
@@ -55,23 +56,27 @@
             transform: scale(1.1);
         }
 
-        @media (max-width: 600px) {
-            .social-media a i {
-                font-size: 1.5em;
-            }
+    @media (max-width: 600px) {
+        .social-media a i {
+            font-size: 4vh;
+        }
+    }
+
+    /* Dark mode styles */
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #cfe8ff;
+            color: #333;
         }
 
-        /* Dark mode styles */
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #cfe8ff;
-                color: #333;
-            }
-
-            .social-media a i {
-                color: #333;
-            }
+        .social-media a i {
+            color: #333;
         }
+
+        .social-media a:hover i {
+            color: #0073e6;
+        }
+    }
     </style>
 </head>
 <body>
